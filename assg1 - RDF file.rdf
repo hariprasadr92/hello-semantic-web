@@ -1,0 +1,73 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:vCard="http://www.w3.org/2006/vcard/ns#"
+    xmlns:dbr="http://dbpedia.org/resource/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:ex="http://csi5180-example.org/"
+    xmlns:rel="http://www.perceive.net/schemas/relationship/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/" > 
+  <rdf:Description rdf:about="http://csi5180-example.org/Hariprasad">
+    <dbr:Education rdf:resource="http://dbpedia.org/resource/University_of_Ottawa"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <vCard:FN>Hariprasad Ramakrishnan</vCard:FN>
+    <dbr:enrollment rdf:resource="http://dbpedia.org/resource/Machine_learning"/>
+    <foaf:knows rdf:resource="http://csi5180-example.org/Jai"/>
+    <vCard:N rdf:nodeID="A0"/>
+    <dbr:enrollment rdf:resource="http://dbpedia.org/resource/Semantic_Web"/>
+    <vCard:hasEmail>hrama039@uottawa.ca</vCard:hasEmail>
+    <vCard:locality rdf:resource="http://dbpedia.org/resource/Ottawa"/>
+    <foaf:knows rdf:resource="http://csi5180-example.org/Shiva"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <vCard:Given>Shiva</vCard:Given>
+    <vCard:Family>Raju</vCard:Family>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://csi5180-example.org/Jai">
+    <foaf:knows rdf:resource="http://csi5180-example.org/Hariprasad"/>
+    <dbr:Education rdf:resource="http://dbpedia.org/resource/Tokyo_University_of_Science"/>
+    <dbr:enrollment rdf:resource="http://dbpedia.org/resource/Japanese"/>
+    <dbr:enrollment rdf:resource="http://dbpedia.org/resource/Robotics"/>
+    <vCard:hasEmail>jai@gmail.com</vCard:hasEmail>
+    <vCard:locality rdf:resource="http://dbpedia.org/resource/Tokyo"/>
+    <vCard:N rdf:nodeID="A2"/>
+    <vCard:FN>Jai Rajakumar</vCard:FN>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Robotics">
+    <dbr:Course rdf:resource="http://dbpedia.org/resource/Tokyo_University_of_Science"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/IOT">
+    <dbr:Course rdf:resource="http://dbpedia.org/resource/Technical_University_of_Berlin"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Semantic_Web">
+    <dbr:Course rdf:resource="http://dbpedia.org/resource/University_of_Ottawa"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <vCard:Given>Jai</vCard:Given>
+    <vCard:Family>Rajakumar</vCard:Family>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Machine_learning">
+    <dbr:Course rdf:resource="http://dbpedia.org/resource/University_of_Ottawa"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A0">
+    <vCard:Given>Hariprasad</vCard:Given>
+    <vCard:Family>Ramakrishnan</vCard:Family>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://csi5180-example.org/Shiva">
+    <foaf:knows rdf:resource="http://csi5180-example.org/Hariprasad"/>
+    <dbr:enrollment rdf:resource="http://dbpedia.org/resource/BI"/>
+    <dbr:enrollment rdf:resource="http://dbpedia.org/resource/IOT"/>
+    <dbr:Education rdf:resource="http://dbpedia.org/resource/Technical_University_of_Berlin"/>
+    <vCard:hasEmail>shiva@gmail.com</vCard:hasEmail>
+    <vCard:locality rdf:resource="http://dbpedia.org/resource/Berlin"/>
+    <vCard:N rdf:nodeID="A1"/>
+    <vCard:FN>Shiva Raju</vCard:FN>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Japanese">
+    <dbr:Course rdf:resource="http://dbpedia.org/resource/Tokyo_University_of_Science"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/BI">
+    <dbr:Course rdf:resource="http://dbpedia.org/resource/Technical_University_of_Berlin"/>
+  </rdf:Description>
+</rdf:RDF>

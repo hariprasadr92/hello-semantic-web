@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vCard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix rel: <http://www.perceive.net/schemas/relationship/> .
+@prefix ex: <http://csi5180-example.org/> .
+
+
+ex:Hariprasad 
+	    	 a foaf:Person ;
+	   	 vCard:FN  "Hariprasad Ramakrishnan";
+          	 vCard:N [ vCard:Family "Ramakrishnan";
+            	      vCard:Given "Hariprasad" ];       
+          	 vCard:locality dbr:Ottawa;           
+		 vCard:hasEmail "hrama039@uottawa.ca";
+            	 dbr:enrollment dbr:Machine_learning,dbr:Semantic_Web;			  
+		 dbr:Education dbr:University_of_Ottawa ;
+			
+ex:Jai 
+			a foaf:Person ;
+			vCard:FN  "Jai Rajakumar";
+            vCard:N [ vCard:Family "Rajakumar";
+                      vCard:Given "Jai" ];       
+            vCard:locality dbr:Tokyo;
+            vCard:hasEmail "jai@gmail.com";
+            dbr:enrollment dbr:Robotics,dbr:Japanese;
+			dbr:Education dbr:Tokyo_University_of_Science;
+			foaf:knows ex:Hariprasad  .
+			
+ex:Shiva 
+			a foaf:Person ;
+			vCard:FN  "Shiva Raju";
+            vCard:N [ vCard:Family "Raju";
+                        vCard:Given "Shiva" ];       
+            vCard:locality dbr:Berlin;
+            vCard:hasEmail "shiva@gmail.com";
+			dbr:Education dbr:Technical_University_of_Berlin ;
+            dbr:enrollment dbr:IOT,dbr:BI ;
+			foaf:knows ex:Hariprasad  .
+
+			  
+dbr:Semantic_Web dbr:Course dbr:University_of_Ottawa.
+dbr:Machine_learning   dbr:Course  dbr:University_of_Ottawa.
+dbr:Robotics dbr:Course dbr:Tokyo_University_of_Science.
+dbr:Japanese   dbr:Course  dbr:Tokyo_University_of_Science.
+dbr:IOT dbr:Course dbr:Technical_University_of_Berlin.
+dbr:BI   dbr:Course  dbr:Technical_University_of_Berlin.
+
+
+
+
+
