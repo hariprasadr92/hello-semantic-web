@@ -3,7 +3,7 @@ My adventures exploring RDF, Apache jena , SPARQL as part of master's coursework
 
 In this small project, I have 
 
-* onstracted Turtles and RDF files. 
+* constracted Turtles and RDF files. 
 * read them using Apache Jena package.
 * used SPARL to query the files
 * used SPARL to query DB pedia.
